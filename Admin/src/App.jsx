@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import { Routes, Route } from 'react-router-dom'
-import Orders from './pages/Orders'
+import Orders from './page/Orders'
 import Login from './components/Login'
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'

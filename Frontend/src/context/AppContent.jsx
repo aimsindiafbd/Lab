@@ -27,7 +27,7 @@ const AppContextProvider = ({ children }) => {
 
         if (token) {
             try {
-                await axios.post(backendUrl + '/api/cart/add', { itemId, name }, { headers: { token } });
+                await axios.post(backendUrl + '/cart/add', { itemId, name }, { headers: { token } });
             } catch (error) {
                 console.log(error);
                 toast.error(error.message)
