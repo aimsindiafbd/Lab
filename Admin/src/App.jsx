@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import { Routes, Route } from 'react-router-dom'
-import Orders from './page/Orders'
 import Login from './components/Login'
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import CheckOrder from './page/CheckOrder'
 export const backendUrl = import.meta.env.VITE_BACKEND_URL
 
 const App = () => {
@@ -23,7 +23,7 @@ localStorage.setItem('token',token)
           <Navbar setToken={setToken}/>
           <hr />
           <Routes>
-            <Route path='/' element={<Orders token={token}/>} />
+            <Route path='/' element={<CheckOrder token={token}/>}/>
           </Routes>
         </>
       }
