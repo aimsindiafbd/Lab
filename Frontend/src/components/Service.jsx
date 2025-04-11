@@ -3,6 +3,7 @@ import { LuMicroscope } from "react-icons/lu";
 import { TbReportMedical } from "react-icons/tb";
 import service_1 from '../assets/service_1.jpg'
 import service_3 from '../assets/service_3.jpg'
+import {NavLink} from 'react-router-dom'
 const Services = () => {
   return (
     <div className=" p-3 rounded-xl">
@@ -23,12 +24,12 @@ const Services = () => {
               <LuMicroscope className="text-7xl border border-white text-white  rounded-lg p-3" />
             </div>
             <h1 className="mt-2 text-white font-medium text-xl py-2">Book A Lab Test</h1>
-            <p className="text-white text-normal font-normal text-justify py-2">
+            <p className="text-white text-normal font-normal text-justify pt-2 pb-6">
               Our clinical pathologists are available seven days a week to render diagnoses.
             </p>
-            <p className="mt-6 border rounded-full py-2 px-3 cursor-pointer font-semibold border-white bg-white w-1/2 text-center">
+            <NavLink to='/find-a-test' className="bg-white px-10 py-2 rounded-full">
               View More
-            </p>
+            </NavLink>
           </div>
         </div>
 

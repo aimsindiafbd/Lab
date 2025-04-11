@@ -127,7 +127,7 @@ const TopHeader = () => {
 
                 {/* Category Dropdown */}
                 <select
-                    className="px-2 py-1 rounded-md text-black bg-white border border-gray-300"
+                    className="hidden sm:block px-2 py-1 rounded-md text-black bg-white border border-gray-300"
                     value={selectedCategory}
                     onChange={handleCategoryChange}
                 >

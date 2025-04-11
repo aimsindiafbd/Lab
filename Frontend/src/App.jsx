@@ -20,7 +20,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import ResetPassword from './page/ResetPassword'
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[1vw]'>
+    <div className='px-0 sm:px-[5vw] md:px-[7vw] lg:px-[1vw]'>
       <ToastContainer />
       <TopHeader />
       <Navbar />
