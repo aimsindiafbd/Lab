@@ -34,20 +34,24 @@ const FindATest = () => {
     <div className='my-10 px-2'>
     <h1 className='text-2xl text-center'>Popular Health Check-up Categories</h1>
     <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:px-10 p-4 my-10'>
-        <NavLink to='/category/fever-test'>
+        <NavLink to='/fevertest'>
         <div className='flex justify-between items-center p-4 border rounded shadow'>
             <img src={FeverTest} className='w-11 rounded-xl' alt="" />
             <p className='text-black font-medium text-xl'>Fever Test</p>
         </div>
         </NavLink>
+        <NavLink to='/thyroidtest'>
         <div className='flex justify-between items-center p-4 border rounded shadow'>
             <img src={Thyroidtest} className='w-11 rounded-xl' alt="" />
             <p className='text-black font-medium text-xl'>Thyroid Test</p>
         </div>
+        </NavLink>
+        <NavLink to='/gastrointestinal'>
         <div className='flex justify-between items-center p-4 border rounded shadow'>
             <img src={Gastrointestinal} className='w-11 rounded-xl' alt="" />
             <p className='text-black font-medium text-xl'>Gastrointestinal</p>
         </div>
+        </NavLink>
         <div className='flex justify-between items-center p-4 border rounded shadow'>
             <img src={WomenHealthTest} className='w-11 rounded-xl' alt="" />
             <p className='text-black font-medium text-xl'>Women Health Test</p>

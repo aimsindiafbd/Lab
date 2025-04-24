@@ -23,11 +23,11 @@ const FullBodyCheckupList = () => {
       {/* Heading & View All Button */}
       <div className="flex flex-col sm:flex-row justify-between items-center">
         <h1 className="text-3xl text-black font-medium mb-4 sm:mb-0">
-          Full Body Health Checks
+        Asian Basic Health Package
         </h1>
         <p onClick={()=>navigate('/fullbodyCheckup')}
 
-          className="hidden sm:block cursor-pointer bg-[#00AECD] py-2 text-lg sm:text-2xl px-6 sm:px-10 text-white font-medium rounded hover:bg-[#008BA6] transition-all"
+          className="hidden sm:block cursor-pointer bg-white border border-[#00AECD] py-2 text-lg sm:text-2xl px-6 sm:px-10 text-[#00AECD] font-medium rounded hover:bg-[#008BA6] transition-all hover:text-white"
         >
           View All
         </p>
@@ -56,7 +56,7 @@ const FullBodyCheckupList = () => {
           className="flex gap-4 overflow-x-auto scrollbar-hide w-full px-2 sm:px-0"
           style={{ scrollBehavior: "smooth" }}
         >
-          {TestPrices.FullBody.map((item, index) => (
+          {TestPrices.HealthPackage.map((item, index) => (
             <div onClick={() => navigate(`/testDetails/${item.id}`)} key={index} className='min-w-[250px] w-full sm:w-72 md:w-80 lg:w-[350px] p-4 rounded-lg bg-slate-100 shadow-lg flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500 snap-start'>
               <p className="text-black text-lg sm:text-xl">{item.name}</p>
               <p className="text-lg text-gray-600">{item.Package}</p>

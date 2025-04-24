@@ -21,7 +21,7 @@ const Fever = () => {
     return (
         <div className='my-6 rounded-xl py-6 px-4 bg-cover bg-center' style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='flex flex-col sm:flex-row justify-between items-center'>
-                <h1 className='text-3xl text-white font-medium mb-4 sm:mb-0'>Fever: Dengue, Chikungunya, Malaria</h1>
+                <h1 className='text-3xl text-white font-medium mb-4 sm:mb-0'>Asian Good Health Package</h1>
 
                 <p onClick={()=>navigate('/fevertest')}
                     className="hidden sm:block cursor-pointer bg-white/10 py-2 text-lg sm:text-2xl px-6 sm:px-10 text-white font-medium rounded hover:bg-[#008BA6] transition-all">View All</p>
@@ -43,7 +43,7 @@ const Fever = () => {
             </div>
             <div className='flex justify-center items-center my-10'>
                 <div ref={sliderRef} className="flex gap-4 overflow-x-auto scrollbar-hide w-full px-2 sm:px-0" style={{ scrollBehavior: 'smooth' }}>
-                    {TestPrices.Fever.slice(0, 5).map((item) => (
+                    {TestPrices.GoodHealthPackage.slice(0, 5).map((item) => (
                         <div onClick={() => navigate(`/testDetails/${item.id}`)} className="min-w-[280px] sm:min-w-[350px] p-4 rounded-lg bg-white/15 shadow-lg flex-shrink-0 cursor-pointer transition-transform hover:scale-105" key={item.id}>
                             <p className='text-white text-2xl py-4'>{item.name}</p>
                             <p className="text-lg text-white">{item.Package}</p>

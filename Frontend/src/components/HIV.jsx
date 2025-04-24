@@ -25,7 +25,7 @@ const HIV = () => {
         <div className='bg-white my-6 rounded-xl py-6 px-4'>
             {/* Heading & View All */}
             <div className='flex flex-col sm:flex-row justify-between items-center'>
-                <h1 className='text-2xl md:text-3xl text-black font-medium'>HIV Test</h1>
+                <h1 className='text-2xl md:text-3xl text-black font-medium'>Asian Executive Health Package Male</h1>
                 <p onClick={()=>navigate('/hivtest')} className='hidden sm:block cursor-pointer bg-[#00AECD] py-2 text-lg sm:text-2xl px-6 sm:px-10 text-white font-medium rounded hover:bg-[#008BA6] transition-all'
                 >
                     View All
@@ -49,7 +49,7 @@ const HIV = () => {
                     className='flex overflow-x-auto scrollbar-hide gap-4 snap-x snap-mandatory w-full'
                     style={{ scrollBehavior: 'smooth' }}
                 >
-                    {TestPrices.HIV.slice(0, 6).map((item) => (
+                    {TestPrices.HealthPackageMale.slice(0, 6).map((item) => (
                         <div onClick={() => navigate(`/testDetails/${item.id}`)} className='min-w-[250px] w-full sm:w-72 md:w-80 lg:w-[350px] p-4 rounded-lg bg-slate-100 shadow-lg flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500 snap-start'
                             key={item.id}
                         >

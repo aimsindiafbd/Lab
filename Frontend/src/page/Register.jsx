@@ -2,12 +2,13 @@ import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../context/AppContent';
 import axios from 'axios';
 import { toast } from 'react-toastify'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
     const [currentState, setCurrentState] = useState('Login');
     const { token, setToken, backendUrl, navigate } = useContext(AppContext)
+    
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -20,6 +21,7 @@ const Register = () => {
                 if (response.data.success) {
                     setToken(response.data.token)
                     localStorage.setItem('token', response.data.token)
+                    toast.success("User Register Successfully")
                 } else {
                     toast.error(response.data.message)
                 }
@@ -29,6 +31,7 @@ const Register = () => {
                 if (response.data.success) {
                     setToken(response.data.token);
                     localStorage.setItem('token', response.data.token)
+                    toast.success("Welcome To Asian Labs")
                 } else {
                     toast.error(response.data.message)
                 }

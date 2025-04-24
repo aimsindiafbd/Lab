@@ -74,9 +74,10 @@ const PlaceOrder = () => {
                 for (const itemName in cartItem[testId]) {
                     if (cartItem[testId][itemName] > 0) {
                         const itemInfo =
-                            TestPrices.FullBody.find(test => test.id === testId) ||
-                            TestPrices.Fever.find(test => test.id === testId) ||
-                            TestPrices.HIV.find(test => test.id === testId);
+                            TestPrices.HealthPackage.find(test => test.id === testId) ||
+                            TestPrices.GoodHealthPackage.find(test => test.id === testId) ||
+                            TestPrices.HealthPackageMale.find(test => test.id === testId) ||
+                            TestPrices.CardiacRiskDetection.find(test => test.id === testId);
 
                         if (itemInfo) {
                             orderItem.push({

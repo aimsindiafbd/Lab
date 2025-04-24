@@ -32,9 +32,11 @@ const Cart = () => {
       <div>
         {cartData.map((item, index) => {
           const allTests = [
-            ...TestPrices.FullBody,
-            ...TestPrices.Fever,
-            ...TestPrices.HIV,
+            ...TestPrices.HealthPackage,
+            ...TestPrices.GoodHealthPackage,
+            ...TestPrices.HealthPackageMale,
+            ...TestPrices.CardiacRiskDetection,
+            ...TestPrices.Gastrointestinal,
           ]; // ✅ Flatten categories
 
           const TestData = allTests.find((test) => test.id === item._id); // ✅ Correct lookup
@@ -73,7 +75,7 @@ const Cart = () => {
           <CartTotal />
           <div className="w-full text-end">
             {!token ?
-              <button className="mt-4 bg-[#00AECD] text-white py-2 px-6 rounded-lg w-full">
+              <button onClick={()=>navigate('/register')} className="mt-4 bg-[#00AECD] text-white py-2 px-6 rounded-lg w-full">
                 Login to Continue
               </button>
               :

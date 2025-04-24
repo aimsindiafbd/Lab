@@ -80,9 +80,11 @@ const AppContextProvider = ({ children }) => {
         let totalAmount = 0;
         for (const items in cartItem) {
             const allTests = [
-                ...TestPrices.FullBody,
-                ...TestPrices.Fever,
-                ...TestPrices.HIV,
+                ...TestPrices.HealthPackage,
+                ...TestPrices.GoodHealthPackage,
+                ...TestPrices.HealthPackageMale,
+                ...TestPrices.CardiacRiskDetection,
+                ...TestPrices.Gastrointestinal,
             ];
             let itemInfo = allTests.find((test) => test.id === items);;
             for (const item in cartItem[items]) {

@@ -29,11 +29,11 @@ import hormonescolor from './hormonescolor.png'
 import IronTest from './IronTest.png'
 
 export const TestPrices = {
-    FullBody: [
+    HealthPackage: [
         {
-            heading: "Full Body Health Checks",
+            heading: "Asian Basic Health Package",
             id: "FBTP01",
-            name: "Wellwise Total Profile",
+            name: "Sugar Fasting",
             sample: "Blood & Urine",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -42,9 +42,9 @@ export const TestPrices = {
             Price: 2849
         },
         {
-            heading: "Full Body Health Checks",
+            heading: "Asian Basic Health Package",
             id: "FBTP02",
-            name: "Wellwise Advanced Profile",
+            name: "Sugar PP",
             sample: "Blood & Urine",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -53,9 +53,9 @@ export const TestPrices = {
             Price: 2159
         },
         {
-            heading: "Full Body Health Checks",
+            heading: "Asian Basic Health Package",
             id: "FBTP03",
-            name: "WellWise Exclusive Profile- Male",
+            name: "Lipid Profile Screening",
             sample: "Blood & Urine",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -65,9 +65,9 @@ export const TestPrices = {
             Price: 3539
         },
         {
-            heading: "Full Body Health Checks",
+            heading: "Asian Basic Health Package",
             id: "FBTP04",
-            name: "WellWise Exclusive Profile-Female",
+            name: "LFT",
             sample: "Blood & Urine",
             Gender: "Female",
             AgeGroup: "All Age Group",
@@ -76,9 +76,9 @@ export const TestPrices = {
             Price: 3539
         },
         {
-            heading: "Full Body Health Checks",
+            heading: "Asian Basic Health Package",
             id: "FBTP05",
-            name: "Wellwise Platinum - Male",
+            name: "KFT",
             sample: "Blood & Urine",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -87,9 +87,31 @@ export const TestPrices = {
             Price: 4799
         },
         {
-            heading: "Full Body Health Checks",
+            heading: "Asian Basic Health Package",
             id: "FBTP06",
-            name: "Wellwise Platinum - Female",
+            name: "Urine R/E",
+            sample: "Blood & Urine",
+            Gender: "Female",
+            AgeGroup: "All Age Group",
+            ReportTimeline: "Within 24 HRS after sample collection",
+            Package: "17 Test",
+            Price: 4799
+        },
+        {
+            heading: "Asian Basic Health Package",
+            id: "FBTP06",
+            name: "CBC",
+            sample: "Blood & Urine",
+            Gender: "Female",
+            AgeGroup: "All Age Group",
+            ReportTimeline: "Within 24 HRS after sample collection",
+            Package: "17 Test",
+            Price: 4799
+        },
+        {
+            heading: "Asian Basic Health Package",
+            id: "FBTP06",
+            name: "ESR",
             sample: "Blood & Urine",
             Gender: "Female",
             AgeGroup: "All Age Group",
@@ -97,12 +119,13 @@ export const TestPrices = {
             Package: "17 Test",
             Price: 4799
         }
+
     ],
-    Fever: [
+    GoodHealthPackage: [
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP01",
-            name: "Dengue NS 1 Antigen Test",
+            name: "Sugar Fasting",
             knowas: "Dengue NS1 Elisa, NS1 Elisa Test, Elisa NS1 Antigen for",
             sample: "Blood",
             Gender: "Male",
@@ -111,9 +134,9 @@ export const TestPrices = {
             Price: 600
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP02",
-            name: "Typhidot Test",
+            name: "Sugar PP",
             sample: "Blood",
             Gender: "Both",
             AgeGroup: "All Age Group",
@@ -122,9 +145,9 @@ export const TestPrices = {
             Price: 900
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP03",
-            name: "Widal Test",
+            name: "Lipid Profile Screening",
             knowas: "Widal Slide Test, Widal Blood Test, Widal Test for Typhoid",
             sample: "Blood",
             Gender: "Male",
@@ -134,9 +157,9 @@ export const TestPrices = {
             Price: 280
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP04",
-            name: "Asian Fever Panel Advance",
+            name: "LFT",
             sample: "",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -145,9 +168,9 @@ export const TestPrices = {
             Price: 125
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP05",
-            name: "Asian Fever Panel (Basic)",
+            name: "KFT",
             sample: "Blood",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -156,9 +179,9 @@ export const TestPrices = {
             Price: 700
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP06",
-            name: "Monsoon Fever Panel",
+            name: "HBA1C",
             sample: "Blood",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -167,9 +190,9 @@ export const TestPrices = {
             Price: 225
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP07",
-            name: "Asian Fever Panel (Comprehensive)",
+            name: "Vitamin D",
             sample: "Blood",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -178,9 +201,9 @@ export const TestPrices = {
             Price: 195
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP08",
-            name: "Malaria Test",
+            name: "Vitamin B12",
             knowas: "MP Antigen Test, Peripheral Smear Test for Malaria",
             sample: "Blood",
             Gender: "Male",
@@ -190,9 +213,33 @@ export const TestPrices = {
             Price: 160
         },
         {
-            heading: "Fever: Dengue, Chikungunya, Malaria",
+            heading: "Asian Good Health Package",
             id: "FTP09",
-            name: "Malaria Antigen Test",
+            name: "Urine R/E",
+            knowas: "Malaria Test",
+            sample: "Blood",
+            Gender: "Male",
+            AgeGroup: "All Age Group",
+            ReportTimeline: "Within 24 Hrs after sample collection",
+            Package: "0 Test",
+            Price: 700
+        },
+        {
+            heading: "Asian Good Health Package",
+            id: "FTP10",
+            name: "Stool R/E",
+            knowas: "Malaria Test",
+            sample: "Blood",
+            Gender: "Male",
+            AgeGroup: "All Age Group",
+            ReportTimeline: "Within 24 Hrs after sample collection",
+            Package: "0 Test",
+            Price: 700
+        },
+        {
+            heading: "Asian Good Health Package",
+            id: "FTP11",
+            name: "CBC",
             knowas: "Malaria Test",
             sample: "Blood",
             Gender: "Male",
@@ -202,11 +249,11 @@ export const TestPrices = {
             Price: 700
         }
     ],
-    HIV: [
+    HealthPackageMale: [
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV01",
-            name: "HIV Rapid Test",
+            name: "Sugar Fasting",
             sample: "Blood",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -215,10 +262,10 @@ export const TestPrices = {
             Price: 500
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV02",
-            name: "HIV 1 and 2 Test",
-            knowas: "HIV Test",
+            name: "Sugar PP",
+            knowas: "Asian Executive Health Package Male",
             sample: "Blood",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -227,9 +274,9 @@ export const TestPrices = {
             Price: 520
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV03",
-            name: "Asian STD Panel",
+            name: "TSH",
             knowas: "",
             sample: "Blood",
             Gender: "Both",
@@ -239,9 +286,9 @@ export const TestPrices = {
             Price: 200
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV04",
-            name: "HIV RNA PCR Qualitative Test",
+            name: "Lipid Profile Screening",
             knowas: "",
             sample: "Blood",
             Gender: "Both",
@@ -251,9 +298,9 @@ export const TestPrices = {
             Price: 600
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV05",
-            name: "CD4+CD8 Count, Flow Cytometry,EDTA Test",
+            name: "LFT",
             knowas: "",
             sample: "Blood",
             Gender: "Both",
@@ -263,9 +310,9 @@ export const TestPrices = {
             Price: 280
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV06",
-            name: "Western Blot HIV Test",
+            name: "KFT",
             knowas: "",
             sample: "Blood",
             Gender: "Both",
@@ -275,9 +322,9 @@ export const TestPrices = {
             Price: 335
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV07",
-            name: "STD Panel",
+            name: "Uric acid",
             knowas: "",
             sample: "Blood",
             Gender: "Both",
@@ -287,9 +334,9 @@ export const TestPrices = {
             Price: 180
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV08",
-            name: "STD Panel",
+            name: "HBA1C",
             knowas: "",
             sample: "Blood",
             Gender: "Both",
@@ -299,9 +346,69 @@ export const TestPrices = {
             Price: 180
         },
         {
-            heading: "HIV Test",
+            heading: "Asian Executive Health Package Male",
             id: "HIV09",
-            name: "HIV Geno Test",
+            name: "Urine R/E",
+            knowas: "Hiv 1 Geno Test",
+            sample: "EDTA",
+            Gender: "Both",
+            AgeGroup: "All Age Group",
+            reportTimeline: "3 Day",
+            Package: "0 Test",
+            Price: 230
+        },
+        {
+            heading: "Asian Executive Health Package Male",
+            id: "HIV10",
+            name: "CBC",
+            knowas: "Hiv 1 Geno Test",
+            sample: "EDTA",
+            Gender: "Both",
+            AgeGroup: "All Age Group",
+            reportTimeline: "3 Day",
+            Package: "0 Test",
+            Price: 230
+        },
+        {
+            heading: "Asian Executive Health Package Male",
+            id: "HIV11",
+            name: "ECG/Echo/TMT",
+            knowas: "Hiv 1 Geno Test",
+            sample: "EDTA",
+            Gender: "Both",
+            AgeGroup: "All Age Group",
+            reportTimeline: "3 Day",
+            Package: "0 Test",
+            Price: 230
+        },
+        {
+            heading: "Asian Executive Health Package Male",
+            id: "HIV12",
+            name: "Ultrasound",
+            knowas: "Hiv 1 Geno Test",
+            sample: "EDTA",
+            Gender: "Both",
+            AgeGroup: "All Age Group",
+            reportTimeline: "3 Day",
+            Package: "0 Test",
+            Price: 230
+        },
+        {
+            heading: "Asian Executive Health Package Male",
+            id: "HIV13",
+            name: "Xray-Chest",
+            knowas: "Hiv 1 Geno Test",
+            sample: "EDTA",
+            Gender: "Both",
+            AgeGroup: "All Age Group",
+            reportTimeline: "3 Day",
+            Package: "0 Test",
+            Price: 230
+        },
+        {
+            heading: "Asian Executive Health Package Male",
+            id: "HIV14",
+            name: "PFT",
             knowas: "Hiv 1 Geno Test",
             sample: "EDTA",
             Gender: "Both",
@@ -311,10 +418,11 @@ export const TestPrices = {
             Price: 230
         },
     ],
-    Thyroid: [
+    CardiacRiskDetection: [
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL01",
-            name: "Thyroid Stimulating Hormone (TSH) Test",
+            name: "Thyroid Profile",
             knownas: "TSH Blood Test, TSH Ultrasensitive Test",
             sample: "Blood",
             Gender: "Male",
@@ -324,8 +432,9 @@ export const TestPrices = {
             Price: 370
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL02",
-            name: "Total Thyroid Test",
+            name: "Lipid Profile Screening",
             knownas: "Total Thyroid with Total T3, T4 and TSH",
             sample: "Blood",
             Gender: "Male",
@@ -334,8 +443,9 @@ export const TestPrices = {
             Price: 550
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL03",
-            name: "Thyroid Profile",
+            name: "LFT",
             knownas: "Thyroid Profile with Free T3, T4 and TSH, TFT Test, Thyroid Profile Serum Test",
             sample: "Blood",
             Gender: "Male",
@@ -345,8 +455,9 @@ export const TestPrices = {
             Price: 950
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL04",
-            name: "Health Screen Test",
+            name: "KFT",
             sample: "Blood & Urine",
             Gender: "Male",
             AgeGroup: "All Age Group",
@@ -355,8 +466,9 @@ export const TestPrices = {
             Price: 399
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL05",
-            name: "Anti Thyroid Peroxidase AntiBody (Anti TPO) Test",
+            name: "HBA1C",
             knownas: "Anti TPO Serum Test, Anti TPO Antibody Test, Anti TPO Blood Test",
             sample: "Blood",
             Gender: "Male",
@@ -365,8 +477,9 @@ export const TestPrices = {
             Price: 145
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL06",
-            name: "Free T4 ,Serum Test",
+            name: "CBC",
             sample: "Blood",
             Gender: "Both",
             AgeGroup: "All Age Group",
@@ -374,6 +487,7 @@ export const TestPrices = {
             Price: 420
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL07",
             name: "Total T4 ,Serum Test",
             sample: "Blood",
@@ -384,6 +498,7 @@ export const TestPrices = {
             Price: 210
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL08",
             name: "Total T3 ,Serum Test",
             sample: "Blood",
@@ -393,6 +508,7 @@ export const TestPrices = {
             Price: 200
         },
         {
+            heading:'Asian Special Cardiac Risk Detection',
             id: "TTL09",
             name: "Free T3,Serum Test",
             sample: "Blood",
@@ -482,6 +598,7 @@ export const TestPrices = {
     ],
     Gastrointestinal: [
         {
+            heading:"Gastrointestinal",
             id: "GTL01",
             name: "SGPT - Alanine Amino Transferase, Serum Test",
             knownas: "SGPT Test, Alanine Amino Transferase Test, SGPT Serum Test, SGPT Blood Test",
@@ -490,7 +607,7 @@ export const TestPrices = {
             AgeGroup: "All Age Group",
             ReportTimeline: "Within 24 HRS",
             Package: "1 Test",
-            Price: "₹ 180"
+            Price: 180
         },
         {
             id: "GTL02",
@@ -500,7 +617,7 @@ export const TestPrices = {
             AgeGroup: "All Age Group",
             ReportTimeline: "Within 24 HRS",
             Package: "1 Test",
-            Price: "₹ 450"
+            Price: 180
         },
         {
             id: "GTL03",
@@ -511,7 +628,7 @@ export const TestPrices = {
             AgeGroup: "All Age Group",
             ReportTimeline: "Within 24 HRS",
             Package: "1 Test",
-            Price: "₹ 500"
+            Price: 180
         },
         {
             id: "GTL04",
@@ -522,7 +639,7 @@ export const TestPrices = {
             AgeGroup: "All Age Group",
             ReportTimeline: "Within 24 HRS",
             Package: "1 Test",
-            Price: "₹ 500"
+            Price: 180
         },
         {
             id: "GTL05",
@@ -531,7 +648,7 @@ export const TestPrices = {
             Gender: "Male",
             AgeGroup: "All Age Group",
             Package: "1 Test",
-            Price: "₹ 630"
+            Price: 180
         },
         {
             id: "GTL06",
@@ -540,7 +657,7 @@ export const TestPrices = {
             Gender: "Both",
             AgeGroup: "All Age Group",
             Package: "1 Test",
-            Price: "₹ 1300"
+            Price: 180
         },
         {
             id: "GTL07",
@@ -549,7 +666,7 @@ export const TestPrices = {
             Gender: "Both",
             AgeGroup: "All Age Group",
             Package: "1 Test",
-            Price: "₹ 1800"
+            Price: 180
         },
         {
             id: "GTL08",
@@ -558,7 +675,7 @@ export const TestPrices = {
             Gender: "Both",
             AgeGroup: "All Age Group",
             Package: "1 Test",
-            Price: "₹ 3200"
+            Price: 180
         },
         {
             id: "GTL09",
@@ -567,7 +684,7 @@ export const TestPrices = {
             Gender: "Both",
             AgeGroup: "All Age Group",
             Package: "1 Test",
-            Price: "₹ 750"
+            Price: 180
         }
     ],
     Categories: [
@@ -579,7 +696,7 @@ export const TestPrices = {
         },
         {
             id: "thyroid",
-            Categories: "Thyroid",
+            Categories: "Cardiac Risk",
             image: Thyroidtest,
             link: "/thyroidtest"
         },
