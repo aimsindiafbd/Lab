@@ -37,6 +37,10 @@ const Cart = () => {
             ...TestPrices.HealthPackageMale,
             ...TestPrices.CardiacRiskDetection,
             ...TestPrices.Gastrointestinal,
+            ...TestPrices.Allergy,
+            ...TestPrices.Pregnancy,
+            ...TestPrices.Swasthfit,
+            ...TestPrices.Diabetic,
           ]; // ✅ Flatten categories
 
           const TestData = allTests.find((test) => test.id === item._id); // ✅ Correct lookup

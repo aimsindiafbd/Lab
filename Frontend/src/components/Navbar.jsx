@@ -126,7 +126,7 @@ const Navbar = () => {
           <hr className='w-2/4 border-none h-[1.5px] bg-white hidden mx-4' />
           </NavLink>
           <NavLink to='/fullbodycheckhealthprice' className='text-md uppercase font-medium'>
-          Full Body Checkup
+          Special Program
           <hr className='w-2/4 border-none h-[1.5px] bg-white hidden mx-4' />
           </NavLink>
           <NavLink to='/about' className='text-md uppercase font-medium'>

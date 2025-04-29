@@ -18,15 +18,11 @@ import Cardiology from './Cardiology.png'
 import Gastro from './Gastro.png'
 import Immunity from './Immunity.png'
 
-
-// Women Care
-import WomenTest from './WomenTest.png'
-import AnemiaColor from './AnemiaColor.png'
-import FemaleCancer from './FemaleCancer.png'
-import Pregnancy from './Pregnancy.png'
-import infertilitycolor from './infertilitycolor.png'
-import hormonescolor from './hormonescolor.png'
-import IronTest from './IronTest.png'
+// Special Program
+import AllergyImg from './Allergy.webp'
+import Pregnancy from './pregnancy-packages.webp'
+import swasthfit from './swasthfit.webp'
+import diabetic from './diabetic.webp'
 
 export const TestPrices = {
     HealthPackage: [
@@ -420,7 +416,7 @@ export const TestPrices = {
     ],
     CardiacRiskDetection: [
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL01",
             name: "Thyroid Profile",
             knownas: "TSH Blood Test, TSH Ultrasensitive Test",
@@ -432,7 +428,7 @@ export const TestPrices = {
             Price: 370
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL02",
             name: "Lipid Profile Screening",
             knownas: "Total Thyroid with Total T3, T4 and TSH",
@@ -443,7 +439,7 @@ export const TestPrices = {
             Price: 550
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL03",
             name: "LFT",
             knownas: "Thyroid Profile with Free T3, T4 and TSH, TFT Test, Thyroid Profile Serum Test",
@@ -455,7 +451,7 @@ export const TestPrices = {
             Price: 950
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL04",
             name: "KFT",
             sample: "Blood & Urine",
@@ -466,7 +462,7 @@ export const TestPrices = {
             Price: 399
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL05",
             name: "HBA1C",
             knownas: "Anti TPO Serum Test, Anti TPO Antibody Test, Anti TPO Blood Test",
@@ -477,7 +473,7 @@ export const TestPrices = {
             Price: 145
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL06",
             name: "CBC",
             sample: "Blood",
@@ -487,7 +483,7 @@ export const TestPrices = {
             Price: 420
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL07",
             name: "Total T4 ,Serum Test",
             sample: "Blood",
@@ -498,7 +494,7 @@ export const TestPrices = {
             Price: 210
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL08",
             name: "Total T3 ,Serum Test",
             sample: "Blood",
@@ -508,7 +504,7 @@ export const TestPrices = {
             Price: 200
         },
         {
-            heading:'Asian Special Cardiac Risk Detection',
+            heading: 'Asian Special Cardiac Risk Detection',
             id: "TTL09",
             name: "Free T3,Serum Test",
             sample: "Blood",
@@ -598,7 +594,7 @@ export const TestPrices = {
     ],
     Gastrointestinal: [
         {
-            heading:"Gastrointestinal",
+            heading: "Gastrointestinal",
             id: "GTL01",
             name: "SGPT - Alanine Amino Transferase, Serum Test",
             knownas: "SGPT Test, Alanine Amino Transferase Test, SGPT Serum Test, SGPT Blood Test",
@@ -803,35 +799,343 @@ export const TestPrices = {
             link: "/immunity-test-price"
         },
     ],
-    WomenCare: [
+
+    // Special Program
+    SpecialProgram: [
         {
-            Test: "Women Test",
-            image: WomenTest,
-            link: "/category/women-health-test-price"
+            id: "allergy",
+            Categories: "allergy",
+            image: AllergyImg,
+            link: "/allergy"
         },
         {
-            Test: "Anemia Color",
-            image: AnemiaColor
+            id: "Pregnancy",
+            Categories: "Pregnancy",
+            image: Pregnancy,
+            link: "/pregancy"
         },
         {
-            Test: "Female Cancer",
-            image: FemaleCancer
+            id: "swasthfit",
+            Categories: "swasthfit",
+            image: swasthfit,
+            link: "/swasthfit"
         },
         {
-            Test: "Pregnancy",
-            image: Pregnancy
+            id: "diabetic",
+            Categories: "diabetic",
+            image: diabetic,
+            link: "/diabetic"
+        },
+    ],
+
+    Allergy: [
+        {
+            heading:"Allergy",
+            id: "A001",
+            name: "IMMUNOGLOBULIN IgE, SERUM",
+            SpecialInstruction: "Overnight fasting is preferred.",
+            SampleReport: "Daily",
+            Parameter: "1 parameter(s) covered",
+            Price: 900,
+            Overview: {
+                Heading: "What is IMMUNOGLOBULIN IgE, SERUM?",
+                Answer: "Immunoglobulins are proteins produced by plasma cells, a type of white blood cells, and are an important part of your defense system. There are 5 types of immunoglobulins, namely IgG, IgM, IgA, IgE & IgD. Immunoglobulin IgE is also present in small quantities in the blood and plays a role in allergies & parasitic infections. High IgE levels are seen in asthma, allergic bronchitis, sinusitis, hay fever & allergic skin infections."
+            },
+            Parameters: ["Immunoglobulin IgE, Serum"],
+            DoctorInfo: {
+                PretestInformation: "Immunoglobulin IgE, Serum",
+                ReportDelivery: "Daily",
+                Code: "A001",
+                Category: "Allergy",
+                Stability: {
+                    Room: "2HRS",
+                    Refrigerated: "72 hrs",
+                    Frozen: "3 months"
+                },
+                Method: "ImmunoCAP",
+                Specimen: "2 mL (1 mL min.) Serum from 1 SST. Ship refrigerated or frozen. Overnight fasting is preferred."
+            }
         },
         {
-            Test: "Infertility Color",
-            image: infertilitycolor
+            id: "A002",
+            heading:"Allergy",
+            name: "ALLERGY DUST PANEL",
+            SpecialInstruction: "No special preparation required.",
+            SampleReport: "Sample Daily by 11 am; Report 3 days",
+            Parameter: "4 parameter(s) covered",
+            Price: 3800,
+            Overview: {
+                Heading: "What is ALLERGY DUST PANEL?",
+                Answer: "House dust is a mixture of mites, shed skin cells, soil particles, bits of dead bugs like cockroaches and pet fur. These can be inhaled by you and lead to allergic reactions. Dust mites are the most common cause of allergy from house dust. Symptoms include runny nose, sneezing, nose block, itchy skin & cough."
+            },
+            Parameters: ["Cockroach", "Dermatophagoides farinae", "Dermatophagoides pteronyssinus", "House Dust"],
+            DoctorInfo: {
+                PretestInformation: "No special preparation required.",
+                ReportDelivery: "Sample Daily by 11 am; Report 3 days",
+                Code: "A002",
+                Category: "Allergy",
+                Stability: {
+                    Room: "8HRS",
+                    Refrigerated: "1 Week",
+                    Frozen: "2 Week"
+                },
+                Method: "ImmunoCAP, FEIA",
+                Specimen: "4 mL (2 mL min.) Serum from 1 SST. Ship refrigerated or frozen."
+            }
         },
         {
-            Test: "Hormones Color",
-            image: hormonescolor
+            id: "A003",
+            heading:"Allergy",
+            name: "FOOD INTOLERANCE TEST",
+            SpecialInstruction: "No special preparation required.",
+            SampleReport: "Sample Daily by 1 pm; Report 2 days",
+            Parameter: "214 parameter(s) covered",
+            Price: 14000,
+            Overview: {
+                Heading: "What is FOOD INTOLERANCE TEST?",
+                Answer: "Physical reactions to certain foods cause food intolerance and produce the same signs & symptoms as food allergy. However, food intolerance is not mediated through your immune system, unlike food allergy. If you have food intolerance, you may be able to eat small amounts of that food without any trouble, but if you eat large quantities, you can suffer from nausea, vomiting, bloating, diarrhea, or constipation. This test includes 220 different food items from various food groups."
+            },
+            Parameters: ["ALPHA-LACTALBUMIN", "BETA-LACTOGLOBULIN", "BUFFALO MILK", "CASEIN", "Cow’s milk", "EGG WHITE"],
+            DoctorInfo: {
+                PretestInformation: "No special preparation required.",
+                ReportDelivery: "Sample Daily by 1 pm; Report 2 days",
+                Code: "A003",
+                Category: "Allergy",
+                Stability: {
+                    Room: "8HRS",
+                    Refrigerated: "1 Week",
+                    Frozen: "2 Week"
+                },
+                Method: "Protein Microarray",
+                Specimen: "2 mL (1 mL min.) serum from 1 SST. Ship refrigerated or frozen."
+            }
+        }
+    ],
+
+    Pregnancy: [
+        {
+
+            id: 'P001',
+            heading:"Pregnancy",
+            name: "PREGNANCY PACKAGE 1",
+            SpecialInstruction: "No special preparation required",
+            SampleReport: "Daily",
+            Parameter: "71 parameter(s) covered",
+            Price: 7600,
+            Parameters: {
+                P1: "COMPLETE BLOOD COUNT; CBC",
+                P2: "IRON STUDIES",
+                P3: "FOLATE (FOLIC ACID), SERUM",
+                P4: "URINE EXAMINATION, ROUTINE; URINE, R/E",
+            },
+            DoctorInfor: {
+                PretestInformation: "Null",
+                ReportDelivery: "Null",
+                Code: "P001",
+                Category: "Pregancy",
+                StabilityRoom: "Null",
+                StabilityRefrigerated: "Null",
+                StabilityFrozen: "Null",
+                Method: "Null",
+                Specimen: "Null",
+                Usage: "Null",
+            }
         },
         {
-            Test: "Iron Test",
-            image: IronTest
+
+            id: 'P002',
+            heading:"Pregnancy",
+            name: "PREGNANCY PACKAGE 2",
+            SpecialInstruction: "No special preparation required.",
+            SampleReport: "Daily",
+            Parameter: "47 parameter(s) covered",
+            Price: 4100,
+            Parameters: {
+                P1: "COMPLETE BLOOD COUNT; CBC",
+                P2: "IRON STUDIES",
+                P3: "FOLATE (FOLIC ACID), SERUM",
+                P4: "URINE EXAMINATION, ROUTINE; URINE, R/E",
+            },
+            DoctorInfor: {
+                PretestInformation: "Null",
+                ReportDelivery: "Null",
+                Code: "P002",
+                Category: "Pregancy",
+                StabilityRoom: "Null",
+                StabilityRefrigerated: "Null",
+                StabilityFrozen: "Null",
+                Method: "Null",
+                Specimen: "Null",
+                Usage: "Null",
+            }
+        },
+        {
+            id: 'P003',
+            heading:"Pregnancy",
+            name: "PREGNANCY PACKAGE 3",
+            SpecialInstruction: "No special preparation required",
+            SampleReport: "Daily",
+            Parameter: "49 parameter(s) covered",
+            Price: 5000,
+            Parameters: {
+                P1: "COMPLETE BLOOD COUNT; CBC",
+                P2: "IRON STUDIES",
+                P3: "FOLATE (FOLIC ACID), SERUM",
+                P4: "URINE EXAMINATION, ROUTINE; URINE, R/E",
+            },
+            DoctorInfor: {
+                PretestInformation: "Null",
+                ReportDelivery: "Null",
+                Code: "P002",
+                Category: "Pregancy",
+                StabilityRoom: "Null",
+                StabilityRefrigerated: "Null",
+                StabilityFrozen: "Null",
+                Method: "Null",
+                Specimen: "Null",
+                Usage: "Null",
+            }
+        }
+    ],
+
+    Swasthfit: [
+        {
+            id: 'SF001',
+            heading:"Swathfit",
+            name: "SWASTHFIT SUPER 1",
+            SpecialInsruction: "12 Hour Fasting Mandatory",
+            SampleReport: "Sample Daily by 11 AM; Report Same day",
+            Parameter: "33 parameter(s) covered",
+            Price: 1850,
+            Parameters: {
+                P1: "A : G Ratio",
+                P2: "Albumin",
+                P3: "Alkaline Phosphatase (ALP)",
+                P4: "ALT (SGPT)",
+            },
+            DoctorInfor: {
+                PretestInformation: "12 Hour Fasting Mandatory",
+                ReportDelivery: "Sample Daily by 11 AM; Report Same day",
+                Code: "SF001",
+                Category: "swasthfit",
+                StabilityRoom: "6 hrs",
+                StabilityRefrigerated: "72 hrs",
+                StabilityFrozen: "NA",
+                Method: "--",
+            }
+        },
+        {
+            id: 'SF002',
+            heading:"Swathfit",
+            name: "SWASTHFIT SUPER 2",
+            SpecialInsruction: "12 Hour Fasting Mandatory.",
+            SampleReport: "Sample Daily by 11 AM; Report Same day",
+            Parameter: "55 parameter(s) covered",
+            Price: 2350,
+            Parameters: {
+                P1: "A : G Ratio",
+                P2: "Albumin",
+                P3: "Alkaline Phosphatase (ALP)",
+                P4: "ALT (SGPT)",
+            },
+            DoctorInfor: {
+                PretestInformation: "12 Hour Fasting Mandatory.",
+                ReportDelivery: "Sample Daily by 11 AM; Report Same day",
+                Code: "SF002",
+                Category: "SWASTHFIT",
+                StabilityRoom: "6 hrs",
+                StabilityRefrigerated: "48 hrs",
+                StabilityFrozen: "48 hrs",
+                Method: "--",
+                Specimen: "2 mL (1 mL min.) plasma from 1 Grey Top (Sodium Fluoride) tube, 4 mL (3 mL min.) whole blood in 1 Lavender Top (EDTA) tube & 4 mL (3 mL min.) serum from 1 SST",
+                Usage: "This is a general health check package, suitable for all and it covers all essential parameters. It is ideal for someone who wishes to get routine health check-up done. Parameters pertaining to all the major organs are covered. Package includes Thyroid Pr",
+            }
+        },
+        {
+            id: 'SF003',
+            heading:"Swathfit",
+            name: "SWASTHFIT SUPER 3",
+            SpecialInsruction: "12 Hour Fasting Mandatory. Wrap sample in aluminium foil to protect from light.",
+            SampleReport: "Sample Daily by 11 AM; Report Same day",
+            Parameter: "35 parameter(s) covered",
+            Price: 3350,
+            Parameters: {
+                P1: "A : G Ratio",
+                P2: "Albumin",
+                P3: "Alkaline Phosphatase (ALP)",
+                P4: "ALT (SGPT)",
+            },
+            DoctorInfor: {
+                PretestInformation: "12 Hour Fasting Mandatory. Wrap sample in aluminium foil to protect from light.",
+                ReportDelivery: "Sample Daily by 11 AM; Report Same day",
+                Code: "SF003",
+                Category: "SWASTHFIT",
+                StabilityRoom: "6 hrs",
+                StabilityRefrigerated: "48 hrs",
+                StabilityFrozen: "NA",
+                Method: "Null--",
+                Specimen: "2 mL (1 mL min.) plasma from 1 Grey Top (Sodium Fluoride) tube & 4 mL (3 mL min.) serum from 1 SST",
+                Usage: "Vitamins and minerals are considered essential nutrients. They help shore up bones, heal wounds, and bolster your immune system. They also convert food into energy, and repair cellular damage. This package includes Vitamin D and Vitamin B12 along with tes",
+            }
+        }
+    ],
+
+    Diabetic: [
+        {
+            id: 'DSF001',
+            heading:"Diabetic",
+            name: "SWASTHFIT DIABETES CHECK BASIC",
+            SpecialInsruction: "Overnight fasting preferred. Grossly hemolysed samples are not acceptable. First morning urine",
+            SampleReport: "Daily",
+            Parameter: "41 parameter(s) covered",
+            Price: 1500,
+            Overview: {
+                Heading: "What is SWASTHFIT DIABETES CHECK BASIC ?",
+                Answer: "Diabetes mellitus (DM) is a metabolic disorder leading to high blood sugar levels. It is mainly of 2 types : Type 1 due to destruction of Insulin producing cells in your pancreas and Type 2 due to less production of Insulin or poor response of your cells to Insulin. Type 2 is more common and results in too much sugar circulating in your blood. Common symptoms include increased thirst, frequent urination, hunger, fatigue, weight loss, blurred vision, numbness in hands & feet. If untreated, all organs of the body can suffer damage. This panel helps to detect your status whether you are suffering from Diabetes or not."
+            },
+            Parameters: {
+                P1: "SUGAR CHOICE (F/PP/RANDOM)",
+                P2: "HbA1c; GLYCOSYLATED HEMOGLOBIN",
+                P3: "KIDNEY PANEL; KFT",
+                P4: "LIPID SCREEN, SERUM",
+            },
+            DoctorInfor: {
+                PretestInformation: "Overnight fasting preferred. Grossly hemolysed samples are not acceptable. First morning urine sample is preferred.",
+                ReportDelivery: "Daily",
+                Code: "DSF001",
+                Category: "Diabetic swasthfit",
+                StabilityRoom: "6 hrs",
+                StabilityRefrigerated: "48 hrs",
+                StabilityFrozen: "NA",
+                Method: "--",
+            }
+        },
+        {
+            id: 'DSF002',
+            heading:"Diabetic",
+            name: "SWASTHFIT SUPER 2",
+            SpecialInsruction: "12 Hour Fasting Mandatory.",
+            SampleReport: "Sample Daily by 11 AM; Report Same day",
+            Parameter: "55 parameter(s) covered",
+            Price: 2350,
+            Parameters: {
+                P1: "A : G Ratio",
+                P2: "Albumin",
+                P3: "Alkaline Phosphatase (ALP)",
+                P4: "ALT (SGPT)",
+            },
+            DoctorInfor: {
+                PretestInformation: "12 Hour Fasting Mandatory.",
+                ReportDelivery: "Sample Daily by 11 AM; Report Same day",
+                Code: "SF002",
+                Category: "SWASTHFIT",
+                StabilityRoom: "6 hrs",
+                StabilityRefrigerated: "48 hrs",
+                StabilityFrozen: "48 hrs",
+                Method: "--",
+                Specimen: "2 mL (1 mL min.) plasma from 1 Grey Top (Sodium Fluoride) tube, 4 mL (3 mL min.) whole blood in 1 Lavender Top (EDTA) tube & 4 mL (3 mL min.) serum from 1 SST",
+                Usage: "This is a general health check package, suitable for all and it covers all essential parameters. It is ideal for someone who wishes to get routine health check-up done. Parameters pertaining to all the major organs are covered. Package includes Thyroid Pr",
+            }
         }
     ]
 

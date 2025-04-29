@@ -85,6 +85,10 @@ const AppContextProvider = ({ children }) => {
                 ...TestPrices.HealthPackageMale,
                 ...TestPrices.CardiacRiskDetection,
                 ...TestPrices.Gastrointestinal,
+                ...TestPrices.Allergy,
+                ...TestPrices.Pregnancy,
+                ...TestPrices.Swasthfit,
+                ...TestPrices.Diabetic,
             ];
             let itemInfo = allTests.find((test) => test.id === items);;
             for (const item in cartItem[items]) {

@@ -21,6 +21,10 @@ import ResetPassword from './page/ResetPassword'
 import Contact from './page/Contact'
 import About from './page/About'
 import Loader from './components/Loader'
+import Allergy from './page/Allergy'
+import Pregancy from './page/Pregancy'
+import Swasthfit from './page/Swasthfit'
+import Diabetic from './page/Diabetic'
 
 const App = () => {
   const [loading, setLoading] = useState(false)
@@ -44,6 +48,10 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/find-a-test' element={<FindATest />} />
         <Route path='/testDetails/:id' element={<TestDetails />} />
+        <Route path='/allergy' element={<Allergy/>}/>
+        <Route path='/pregancy' element={<Pregancy/>}/>
+        <Route path='/swasthfit' element={<Swasthfit/>}/>
+        <Route path='/diabetic' element={<Diabetic/>}/>
         <Route path='/fullbodycheckup' element={<FullBodyCheck />} />
         <Route path='/fevertest' element={<FeverTest />} />
         <Route path='/hivtest' element={<HIVTest />} />

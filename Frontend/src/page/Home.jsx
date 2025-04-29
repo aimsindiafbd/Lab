@@ -5,18 +5,18 @@ import FullBodyCheckupList from '../components/FullBodyCheckupList'
 import Fever from '../components/Fever'
 import HIV from '../components/HIV'
 import CheckupCategory from '../components/CheckupCategory'
-import WomenCare from '../components/WomenCare'
+import SpecialProgram from '../components/SpecialProgram'
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <Services />
+      <SpecialProgram/>
       <FullBodyCheckupList />
       <Fever />
       <HIV />
       <CheckupCategory />
-      <WomenCare />
     </div>
   )
 }

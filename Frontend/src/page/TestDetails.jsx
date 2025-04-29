@@ -46,7 +46,12 @@ const TestDetails = () => {
         TestPrices.GoodHealthPackage.find(test => test.id === id) ||
         TestPrices.HealthPackageMale.find(test => test.id === id) ||
         TestPrices.CardiacRiskDetection.find(test => test.id === id) ||
-        TestPrices.Gastrointestinal.find(test => test.id === id);
+        TestPrices.Gastrointestinal.find(test => test.id === id)||
+        TestPrices.Allergy.find(test => test.id === id)||      
+        TestPrices.Pregnancy.find(test => test.id === id)||   
+        TestPrices.Swasthfit.find(test => test.id === id)||      
+        TestPrices.Diabetic.find(test => test.id === id);      
+        
 
     if (!test) {
         return <div className="text-center text-red-500 text-xl font-bold">Test not found</div>;
@@ -66,7 +71,7 @@ const TestDetails = () => {
 
     return (
         <div className="w-full sm:px-10 px-2">
-            <div className="w-10/12 mx-auto shadow-lg my-4 mt-32 px-4 py-3">
+            <div className="w-10/12 mx-auto shadow-lg my-4 mt-24 px-4 py-3">
                 <h2 className="text-lg font-semibold text-[#00AECD]">{test.heading}</h2>
                 <div className="sm:flex block justify-between">
                     <div>

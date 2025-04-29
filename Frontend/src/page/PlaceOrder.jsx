@@ -77,7 +77,11 @@ const PlaceOrder = () => {
                             TestPrices.HealthPackage.find(test => test.id === testId) ||
                             TestPrices.GoodHealthPackage.find(test => test.id === testId) ||
                             TestPrices.HealthPackageMale.find(test => test.id === testId) ||
-                            TestPrices.CardiacRiskDetection.find(test => test.id === testId);
+                            TestPrices.CardiacRiskDetection.find(test => test.id === testId)||
+                            TestPrices.Allergy.find(test => test.id === testId)||
+                            TestPrices.Pregnancy.find(test => test.id === testId)||
+                            TestPrices.Swasthfit.find(test => test.id === testId)||
+                            TestPrices.Diabetic.find(test => test.id === testId);
 
                         if (itemInfo) {
                             orderItem.push({
